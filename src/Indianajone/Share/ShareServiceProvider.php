@@ -29,7 +29,7 @@ class ShareServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+		// $this->app
 	}
 
 	/**
