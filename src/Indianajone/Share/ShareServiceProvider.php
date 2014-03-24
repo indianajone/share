@@ -12,6 +12,17 @@ class ShareServiceProvider extends ServiceProvider {
 	protected $defer = false;
 
 	/**
+	 * Bootstrap the application events.
+	 *
+	 * @return void
+	 */
+	public function boot()
+	{
+		$this->package('indianajone/share');
+		include __DIR__.'/../../routes.php';
+	}
+
+	/**
 	 * Register the service provider.
 	 *
 	 * @return void
