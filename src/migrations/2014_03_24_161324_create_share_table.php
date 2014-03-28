@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
 
 class CreateShareTable extends Migration {
 
@@ -28,7 +27,7 @@ class CreateShareTable extends Migration {
 			$table->integer('deleted_at', false, true)->nullable();
 		});
 
-		Schema::create('shareables', function(Blueprint $table)
+		Schema::create('shareables', function($table)
 		{
 			$table->integer('share_id', false, true);
 
